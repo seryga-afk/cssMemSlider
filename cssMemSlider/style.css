@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.meme-wrapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    overflow: hidden;
+    width: 1000px;
+    height: 800px;
+    position: relative;
+}
+.boxbox{
+    display: flex;
+    width: 100vw;
+    height: 800px;
+
+    position: absolute;
+    left: 0;
+    transition: all .5s linear;
+}
+.box-meme{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 1000px;
+    height: 800px;
+}
+.box-img{
+    border-radius: 10px;
+    width: 1000px;
+    height: 600px;
+    
+}
+.box-joke{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    height: 100px;
+}
+
+
+.radio-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: -134px;
+    left: 425px;
+}
+.radio-label{
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.radio-radio{
+    appearance: none;
+  
+}
+
+
+
+
+.radio-dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: blue;
+    transition: all .3s linear;
+}
+.radio-radio:hover + .radio-dot{
+    background-color: white;
+}
+.radio-radio:checked + .radio-dot{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+.radio-radio:checked:hover + .radio-dot{
+    border: 2px solid #ffffff;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+}
