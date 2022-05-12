@@ -1,1 +1,1 @@
-# cssMemSlider
+https://seryga-afk.github.io/cssMemSlider/cssMemSlider/
